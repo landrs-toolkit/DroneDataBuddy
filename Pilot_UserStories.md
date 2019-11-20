@@ -40,6 +40,8 @@ Note: 2 scenarios
     * Wishlist: Configure Annotated realtime streams for consumption
 2. Repeat above for each sensor
 
+### During flight upload //Is a future wishlist
+
 ### Post flight data download off drone
 **Onboard**
 1. Configure:
