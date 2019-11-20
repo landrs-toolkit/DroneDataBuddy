@@ -1,7 +1,9 @@
 # User stories
 
 ## Pilot/PI user scenarios
-
+* Some of the following can be done in a web connected environment but others are done while in the field where there is no internet connection
+* When in the field the Drone provides a wifi access point when near a known wifi access point it will connect to that
+* The drone provides a webserver 
 ### Plan a project 
 
 1. Capture project information:
