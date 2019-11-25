@@ -1,27 +1,13 @@
 # Pilot/PI user stories:
 * Note: for drone data collecting projects the heriarchy used in the following is:
   - Project > Campaign(s) > Flight(s)
-
-## Server use
-
-### Task: Configure Server
-* Assume a web-connected server of sufficient resources
-
-1. Select Data DB type
-2. Select Schema 
-3. Define Data DB endpoint(s)
-4. Define a tripple store type
-5. Select Schema 
-6. Define tripple store endpoint(s)
-//Wishlist: Configure self publications DB, Schema, endpoints
-
-## Drone use
 * Assume a companion computer onboard the drone that is (i) connected to the autopilot, and (ii) hosting a webserver as a means of prviding an interface to its data and services
 * Some of the following may be done in a web connected environment but others will be done while in the field where there is no internet connection
 * All information should be stored onboard the drone.  Most of it is additionally also synced with a 'local store' (most likely a research lab server), and some of it will further be published to the world in other 'Researcher user stories'
 * When in the field the a wireless connection to the drone is possible (eg by the drone providing an access point itself or connecting to another)
 
 ### Task: Plan a flight
+- Results in the creation of a URI associated with each flight
 * Note, this might be retroactively - i,e after a flight has been completed
 1. Select drone platform (drone plus sensors) from dropdown of available drone platform uris
 2. Select Pilot and observers (as URIs) and/or from dropdowns
@@ -32,6 +18,7 @@
 
 ### Task: Plan a project 
 * Done in the lab with web connectivity
+- Results in the creation of a URI associated with each project
 * Using the drone provided webinterface:
 
 1. Capture project information:
@@ -56,6 +43,8 @@ Note: 3 types of campaigns exist:
  - Coverage of a feature of interest
  - Repeated sampling 
  - Dynamic response
+- Results in the creation of a URI associated with each campaign
+
 
 1. Capture campaign planning information
     * Spatial footprint of campaign
@@ -80,6 +69,8 @@ Note: 3 types of campaigns exist:
 ### Task: Create a data capture plan
 * Done in the lab with web connectivity
 * Likely done per campaign or per project but could be done for each flight
+- Results in the creation of a URI associated with: the data capture plan, and each pre and post flight checklist
+
 * Using the drone provided webinterface:
 
 Note: 2 scenarios
@@ -94,22 +85,30 @@ Note: 2 scenarios
     * Timestamp source
     * Output file format
     * Have optional page to collect additional information related imagery specifically
-2. Repeat (1) for each sensor
-3. Define a preflight metadata checklist and assign a URI
+2. Select trajectory source for sensor data capture
+  * Access trajectory selection form and select:
+    * GPS source
+    * Altitude source
+    * Orientation source
+    * Time source 
+3. Repeat (1&2) for each sensor
+4. Define a preflight metadata checklist and assign a URI
    * Mission (flight plan as created in external planning software)
    * Calibration image or ground data sampling
    * Legal checklists
-4. Define a postflight metadata and assign a URI
+5. Define a postflight metadata and assign a URI
    * Post-flight Calibration image or ground data sampling
    * Flight log 
    * Legal checklists
-5. Select/Define local data archive URI for this DMP information endpoint
-6. Select/Define local data archive URI for the intended flight data 
-6. Publish information to local archive
+6. Select/Define local data archive URI for this DMP information endpoint
+7. Select/Define local data archive URI for the intended flight data 
+8. Publish information to local archive
 // Wishlist: Optional page to configure realtime monitoring configuration (MQTT/Mavlink/COAP/NBIoT/ROS)
 
 ### Task: Capture Flight Data
 * Done in the field likely without web connectivity
+- Results in the creation of a URI associated with each flight's complete data set that includes links to associated sensors, drone, flight plan, pre and post flight check lists, project, and campaign
+
 * Using the drone provided webinterface:
 
 1. Capture preflight metadata by going through previosuly created preflight checklists
