@@ -1,6 +1,6 @@
 # Pilot/PI user stories:
-* Note the project heriarchy used in the following is:
-- Project > Campaign(s) > Flight(s)
+* Note: for drone data collecting projects the heriarchy used in the following is:
+  - Project > Campaign(s) > Flight(s)
 
 ## Server use
 
