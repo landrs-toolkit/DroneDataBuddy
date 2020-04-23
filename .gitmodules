@@ -1,0 +1,12 @@
+[submodule "ardupilot-sitl-docker"]
+	path = ardupilot-sitl-docker
+	url = https://github.com/radarku/ardupilot-sitl-docker.git
+[submodule "px4-sitl-docker"]
+	path = px4-sitl-docker
+	url = https://github.com/radarku/px4-sitl-docker.git
+[submodule "docker-mavros"]
+	path = docker-mavros
+	url = https://github.com/radarku/docker-mavros.git
+[submodule "Rpanion-server"]
+	path = Rpanion-server
+	url = https://github.com/landrs-toolkit/Rpanion-server.git
