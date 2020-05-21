@@ -1,0 +1,29 @@
+version: '3'
+
+volumes:
+    storage:
+
+networks:
+    onboardnet: 
+
+services:
+  sitl:
+    build: ./ardupilot-sitl-docker
+    networks: 
+        - onboardnet
+    retart: unless-stopped
+    ports: 
+        - "5760:5760"
+
+  webfrontend:
+    build: ./Rpanion-server
+    networks: 
+        - onboardnet
+    retart: unless-stopped
+
+  store:
+      build: ./store
+      volumes:
+          - storage
+    retart: unless-stopped
+

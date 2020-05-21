@@ -10,3 +10,6 @@
 [submodule "Rpanion-server"]
 	path = Rpanion-server
 	url = https://github.com/landrs-toolkit/Rpanion-server.git
+[submodule "dockerpi"]
+	path = dockerpi
+	url = https://github.com/landrs-toolkit/dockerpi.git
