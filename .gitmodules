@@ -13,3 +13,9 @@
 [submodule "dockerpi"]
 	path = dockerpi
 	url = https://github.com/landrs-toolkit/dockerpi.git
+[submodule "Simulate2DB/dockerpi"]
+	path = Simulate2DB/dockerpi
+	url = https://github.com/landrs-toolkit/dockerpi.git
+[submodule "Simulate2DB/ardupilot-sitl-docker"]
+	path = Simulate2DB/ardupilot-sitl-docker
+	url = https://github.com/radarku/ardupilot-sitl-docker
