@@ -1,7 +1,9 @@
 # DroneDataBuddy
 On board service to annotate, archive, and publish data as linked data onboard a companion computer
 
-**Status:** This repo is currently just for design discussion and development.  Code dev will begin January 2020
+**Status:** This repo contains code that is being developed to deploy what was previously known as TOAST via Balena on a Pi4
+
+
 
 User Stories are outlined in:
 * [Drone Developer](DroneDeveloper_UserStories.md)
